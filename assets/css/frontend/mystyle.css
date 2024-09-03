@@ -1,0 +1,753 @@
+:root {
+  --pr-color: #048853;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3fff4;
+}
+
+/* Navbar Style */
+
+.navbar {
+  z-index: 3;
+}
+
+/* Navbar Color */
+.nav-color {
+  background-color: #007245;
+  transition: all ease-in-out 0.3s;
+}
+
+.bg-transparant {
+  background-color: #007245;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.75;
+}
+
+* {
+  z-index: 2;
+}
+
+.leaf-img {
+  z-index: 1;
+}
+
+.img-hero {
+  z-index: 1;
+}
+
+.img-hero-trolly {
+  z-index: 1;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.button-primary {
+  width: 133px;
+  height: 40px;
+  background-color: #fff;
+  color: var(--pr-color);
+  border: 2px;
+  border-color: #399772;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Hero Section */
+
+#hero {
+  background: linear-gradient(160deg, var(--pr-color), #000);
+  height: 100vh;
+  width: 100%;
+}
+
+.img-hero {
+  height: 50%;
+}
+
+.img-hero-leaf {
+  height: 60%;
+  image-resolution: 50px;
+  top: 0;
+  left: 0;
+}
+
+.img-hero-trolly {
+  height: 30%;
+  margin-left: 20%;
+}
+
+.hero-tagline h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 72px;
+}
+
+.hero-tagline p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  line-height: 30px;
+  width: 85%;
+}
+
+.button-lg-primary {
+  width: 237px;
+  height: 70px;
+  background-color: #fff;
+  color: var(--pr-color);
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Carousel Slides */
+#fitur h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--pr-color);
+}
+
+.overlay h5 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* yang menjadi masalah jarak gambar carousel */
+.card-fitur {
+  transition: all 0.3s ease-in-out;
+  margin-left: -400px;
+}
+
+.img-fitur {
+  height: 500px;
+  width: 400px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-fitur:hover .img-fitur {
+  width: auto;
+}
+
+.card-fitur:hover .overlay {
+  opacity: 1;
+  height: 500px;
+}
+
+.button-arrow {
+  border: none;
+  border-radius: 50%;
+  width: 61px;
+  height: 61px;
+  background-color: var(--pr-color);
+  padding: 0;
+  font-size: 24px;
+  color: white;
+}
+
+/* yang menjadi masalah jarak gambar carousel */
+#fitur .carousel-track {
+  display: flex;
+  transition: all 1s ease-in-out;
+  margin-left: 400px;
+  padding: 0;
+}
+
+/* Categories Section */
+
+#categories h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--pr-color);
+}
+
+.sub-title {
+  font-size: 18px;
+  color: #000;
+}
+
+.img-categories {
+  height: 90%;
+}
+
+/* Ketika normal (tanpa hover) */
+
+.card-categories {
+  width: 100%;
+  height: 313px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.2s ease-in;
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: var(--pr-color);
+  border-radius: 50%;
+
+  transition: all 0.1s ease-in;
+}
+
+.card-categories h3 {
+  color: var(--pr-color);
+  font-size: 24px;
+
+  transition: all 0.2s ease-in;
+}
+
+.card-categories p {
+  color: #000;
+  font-size: 14px;
+
+  transition: all 0.3s ease-in;
+}
+
+/* Ketika disorot (hover) */
+
+.card-categories:hover {
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(160deg, var(--pr-color), #0e0e0e);
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.2s ease-in;
+}
+
+.card-categories:hover .circle-icon {
+  background-color: #fff;
+  transition: all 0.1s ease-in;
+}
+
+.card-categories:hover h3 {
+  color: #fff;
+  font-size: 24px;
+
+  transition: all 0.2s ease-in;
+}
+
+.card-categories:hover p {
+  color: #fff;
+  font-size: 14px;
+
+  transition: all 0.3s ease-in;
+}
+
+/* Section Artikel */
+
+#artikel-utama {
+  padding: 100px 0;
+}
+
+#artikel-utama h2 {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--pr-color);
+}
+
+.card {
+  border: none;
+}
+
+.card-usercategory {
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  line-height: 14px;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+
+.card-usercategory span {
+  color: var(--pr-color);
+}
+
+.card-body h4 {
+  color: #000;
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+.card-body p {
+  color: #141414;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.button-white {
+  width: 133px;
+  height: 40px;
+  background-color: var(--pr-color);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button-white a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button-more {
+  height: 40px;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-more a {
+  font-weight: 500;
+  color: var(--pr-color);
+  text-decoration: none;
+}
+
+.button-more:hover {
+  background: linear-gradient(
+    170deg,
+    var(--pr-color),
+    #003922,
+    rgb(0, 59, 36),
+    #000
+  );
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.button-more:hover a {
+  color: #fff;
+}
+
+/* ketika di hover */
+.card:hover {
+  background: linear-gradient(170deg, var(--pr-color), #007245, #007245, #000);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  transition: all ease-in-out 0.3s;
+}
+
+/* ketika card di hover, ubah h4 */
+
+.card:hover .card-usercategory span {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+.card:hover .card-body h4 {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover .card-body p {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover .button-white {
+  background-color: #fff;
+  color: var(--pr-color);
+  transition: all ease-in-out 0.3s;
+}
+
+.card:hover .button-white a {
+  color: var(--pr-color);
+}
+
+/* Contact Section */
+
+#contact {
+  background-image: url(../../images/frontend/contact-us.jpg);
+  margin-top: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#contact .overlayy {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#contact .container {
+  padding: 148px 0 148px 0;
+}
+
+#contact h3 {
+  font-weight: 600;
+  font-size: 40px;
+  font-weight: 60px;
+  color: #fff;
+  width: 441px;
+}
+
+.contact h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  margin: 19px 0 14px 0;
+}
+
+.contact a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.contact i {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #fff;
+  margin: 19px 0 14px 0;
+}
+
+#contact a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact i {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card-contact {
+  width: 100%;
+  height: 445px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 52px 48px 52px 48px;
+}
+
+.card-contact h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--pr-color);
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.form-control {
+  background-color: #c4c4c4;
+  height: 75px !important;
+  border-radius: 0;
+}
+
+.form-floating label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #717171;
+}
+
+.button-contact {
+  width: 100%;
+  height: 75px;
+  background: var(--pr-color);
+  border: none;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 270px;
+  background: #000000;
+}
+
+.copyright {
+  bottom: 1%;
+  color: #fff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+footer a {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 21px;
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--pr-color);
+}
+
+/* Artikel and Pagination */
+
+.search-artikel input {
+  border: none;
+  border-radius: 0 0 7px 0;
+}
+
+.search-artikel button {
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 0 7px 0 0;
+  background: #fff;
+  color: var(--pr-color);
+  box-shadow: -5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search-artikel:hover button {
+  background-color: var(--pr-color);
+  color: #fff;
+}
+
+.pagination {
+  border: 0;
+}
+.page-link {
+  color: var(--pr-color);
+}
+
+.page-link.active {
+  background: var(--pr-color);
+}
+
+.card-artikel {
+  background: #fff;
+  height: 180px;
+  border-radius: 5px;
+}
+
+.card-artikel img {
+  height: 180px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-body-artikel {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-body-artikel h4 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card-body-artikel h6 {
+  color: var(--pr-color);
+}
+
+.card-body-artikel a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card-categories-artikel {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 7px 7px 7px 5px;
+}
+
+.card-categories-artikel h4 {
+  padding-top: 3px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.card-categories-artikel p {
+  font-size: 18px;
+  font-weight: 400;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 4px;
+}
+
+.card-artikel:hover {
+  background: var(--pr-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-artikel:hover a {
+  color: #fff;
+}
+
+.card-artikel:hover p {
+  color: #fff;
+}
+
+.card-artikel:hover h6 {
+  color: #fff;
+}
+
+/* --------------------------------------- */
+/* Detail Artikel */
+
+/* breadcrumbs */
+.breadcrumb-artikel {
+  height: 50px;
+  background: #e5e5e5;
+}
+
+.back-to-home i {
+  font-size: 26px;
+  margin-bottom: 19px;
+}
+
+.back-to-home a {
+  padding-top: 0;
+  margin-bottom: 19px;
+}
+
+.bi-house-fill {
+  color: #000;
+}
+
+.artikel-judul p {
+  font-size: 14px;
+  line-height: 15px;
+}
+
+.style-green {
+  background-color: var(--pr-color);
+}
+
+.img-artikel {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  clip-path: inset(0 0 50% 0);
+  display: block;
+  margin-bottom: -320px;
+  height: 50%;
+}
+
+.field-artikel {
+  width: 95%;
+  height: 25px;
+  margin: 7px 0 7px 15px;
+  background: #e5e5e5;
+  border-radius: 7px;
+  padding: 4px 8px 4px 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.field-artikel p {
+  font-size: 10px;
+}
+
+.container-artikel {
+  padding-left: 0;
+  margin-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+/* Artikel lainnya */
+
+.artikel-lainnya {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  padding: 4px;
+}
+
+.artikel-lainnya a {
+  text-decoration: none;
+}
+
+.artikel-lainnya img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: -4px;
+}
+
+.artikel-lainnya p {
+  margin-left: 4px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.artikel-lainnya:hover {
+  background-color: var(--pr-color);
+}
+
+.artikel-lainnya:hover h5 {
+  color: #fff;
+}
+
+.artikel-lainnya:hover p {
+  color: #fff;
+}
